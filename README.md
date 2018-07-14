@@ -27,16 +27,20 @@ Some will return extra parameters. For instance,  **POST** `/login` will also  `
 **Sample Login calls:** 
 
 **POST** `/login` with payload `{ email: 'test@admin.com', password : '123456' }` 
+
 **RESULT** `{success: true, message: [TOKEN_STRING], emailVerified: 0'}`
 
 **POST** `/login` with payload `{ email: 'test@admin.com', password : '00000' }` 
+
 **RESULT** `{success: false, message: 'Incorrect password.'}`
 
 **Sample APIs calls for authenticated user:** 
 
 **POST** `/myorders` with payload `{ token: [TOKEN_STRING], order : {}, shopdId: 0, type: 1 }` 
+
 **RESULT** `{success: true, message: 'Order has been placed'}`
 
 Unverified user will be blocked 
 **POST** `/myorders` with payload `{ token: [TOKEN_STRING], order : {}, shopdId: 0, type: 1 }` 
+
 **RESULT** `{success: false, message: 'Please verify your email address first.'}`
