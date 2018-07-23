@@ -23,7 +23,7 @@ Some will return extra parameters. For instance,  **POST** `/login` will also  `
 **Sample Login calls:**  <br />
 
 **POST** `/login` with payload `{ email: 'test@admin.com', password : '123456' }` <br />
-**RESULT** `{success: true, message: [TOKEN_STRING], emailVerified: 0'}` <br />
+**RESULT** `{success: true, message: [TOKEN_STRING], emailVerified: 0'}` <br /> <br />
 **POST** `/login` with payload `{ email: 'test@admin.com', password : '00000' }` <br />
 **RESULT** `{success: false, message: 'Incorrect password.'}` <br />
 
