@@ -1,4 +1,4 @@
-# Ice bear's Cave - NodeJS API!
+# Ice bear's Cave - NodeJS API! 
 
 **NodeJS + MySql** is used to created this API Server for authentication user, register user and store user information. <br />
 **Gmail API** is used to send email. <br />
@@ -7,12 +7,6 @@
 
 # Setup
 Run `npm install` to install all dependencies and then run `nodemon` for local testing. Then go to `http://localhost:3000`.  <br />
-This server is also running live at [https://protected-wildwood-23463.herokuapp.com/api/](https://protected-wildwood-23463.herokuapp.com/api/) <br />
-Front-end web application relying on this server is deployed at [https:www.lemonhouse.tk](https://www.lemonhouse.tk) <br />
-Testing account email : `test@admin.com` <br />
-Testing account password: `123456` <br />
-
-**Note** : Some configuration is not upload here for security issues. <br />
 
 # APIs
 To access the APIs, user will need to perform a `/login` call and obtain an access token in order to gain access to the main APIs. <br />
